@@ -5,7 +5,7 @@ extends RigidBody2D
 # var a=2
 # var b="textvar"
 
-export var walk_speed = 200
+export var walk_speed = 150
 
 func _ready():
 	# Initialization here
