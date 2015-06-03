@@ -127,7 +127,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -510.635, -163.763 </vector2>
+							<vector2> -209.239, -211.581 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -147,7 +147,7 @@
 							<string> "snap_step" </string>
 							<vector2> 32, 32 </vector2>
 							<string> "zoom" </string>
-							<real> 0.487675 </real>
+							<real> 0.598737 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -274,7 +274,7 @@
 					<string> "_edit_group_" </string>
 					<bool> True </bool>
 				</dictionary>
-				<int> 150 </int>
+				<int> 225 </int>
 				<vector2> 0.212248, 0.212248 </vector2>
 				<resource  resource_type="Texture" path="res://textures/characters/player.png">  </resource>
 				<color> 1, 1, 1, 1 </color>
