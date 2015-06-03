@@ -1,0 +1,15 @@
+::res://::1433335873
+icon.png::ImageTexture::1433157778::
+::res://scenes::1433335903
+main.xml::PackedScene::1433335903::
+tilemap.xml::PackedScene::1433334392::
+tileset.xml::TileSet::1433334404::
+::res://scripts::1433335942
+player.gd::GDScript::1433335942::
+::res://textures::1433143044
+::res://textures/characters::1433161716
+player.png::ImageTexture::1433161606::
+::res://textures/world::1433335350
+bricks.png::ImageTexture::1433161675::
+sky.png::ImageTexture::1433335350::
+tilemap.png::ImageTexture::1433331834::
