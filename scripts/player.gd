@@ -6,18 +6,24 @@ extends RigidBody2D
 # var b="textvar"
 
 # EXPORT
-
 export var walk_speed = 225
+export var walk_acceleration = 8
+export var air_acceleration = 3
 
 # INPUT
-
 var player_right = Input.is_action_pressed("player_right")
 var player_left = Input.is_action_pressed("player_left")
 var player_jump = Input.is_action_pressed("player_jump")
 
 # SENSORS
 
-#var 
+# INTERNAL
+var current_speed=Vector2(0, 0)
+
+func move(speed, acceleration, delta):
+	current_speed.x = lerp( current_speed.x, speed, acceleration * delta )
+	set_linear_velocity( Vector2( current_speed.x, get_linear_velocity().y ) )
+	
 
 func _ready():
 	# Initialization here
@@ -29,15 +35,11 @@ func _fixed_process(delta):
 	player_left = Input.is_action_pressed("player_left")
 	player_jump = Input.is_action_pressed("player_jump")
 
-	# refreshing sensors
-	#ray_ground =
-
 	if player_right:
-		set_linear_velocity(Vector2(self.walk_speed,get_linear_velocity().y))
-	
+		move(walk_speed, walk_acceleration, delta)
 	elif player_left:
-		set_linear_velocity(Vector2(self.walk_speed*(-1),get_linear_velocity().y))
+		move(-walk_speed, walk_acceleration, delta)
 	else:
-		set_linear_velocity(Vector2(0,get_linear_velocity().y))
+		move(0, walk_acceleration, delta)
 	
 	#if player_jump & 

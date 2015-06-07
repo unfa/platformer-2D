@@ -1,12 +1,12 @@
-::res://::1433358592
+::res://::1433428601
 icon.png::ImageTexture::1433157778::
-::res://scenes::1433357839
-main.xml::PackedScene::1433357839::
+::res://scenes::1433361038
+main.xml::PackedScene::1433361038::
 tilemap 02.xml::PackedScene::1433337876::
 tilemap.xml::PackedScene::1433337723::
 tileset.xml::TileSet::1433337899::
-::res://scripts::1433358130
-player.gd::GDScript::1433358130::
+::res://scripts::1433430910
+player.gd::GDScript::1433430910::
 ::res://textures::1433348254
 ::res://textures/characters::1433345902
 player.png::ImageTexture::1433345902::
